@@ -20,13 +20,13 @@ def ficha():
     space = nombre_completo.find(" ")
     iniciales = nombre_completo[0] + nombre_completo[space + 1]
     print (f"Iniciales: {iniciales.upper()}")
-    print (f"Usuario: {nombre_completo[space + 1:].lower() + "." + nombre_completo[0:space].lower()}")
-    print (f"Email valido: {"@" in email}")
+    print (f"Usuario: {nombre_completo[space + 1:].lower() + '.' + nombre_completo[0:space].lower()}")
+    print (f"Email valido: {'@' in email}")
     arroba = email.find("@")
     dominio = email[(arroba+1):]
     print (f"Dominio: {dominio.lower()}")
-    print (f"Nombre para archivo: {nombre_completo.replace(" ", "_").title()}")
-    print(f"Cantidad de a: {nombre_completo.lower().count("a")}")
+    print (f"Nombre para archivo: {nombre_completo.replace(' ', '_').title()}")
+    print(f"Cantidad de a: {nombre_completo.lower().count('a')}")
     print (f"Codigo secreto: {nombre_completo[::-1].upper()}")
     print (f"Nota 1: {nota_1}")
     print (f"Nota 2: {nota_2}")
